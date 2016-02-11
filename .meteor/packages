@@ -20,3 +20,6 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 mrt:modernizr-meteor
 percolate:velocityjs
+pauloborges:mapbox
+fourseven:scss
+wolves:bourbon

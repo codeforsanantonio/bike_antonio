@@ -23,6 +23,7 @@ ecmascript-runtime@0.2.6
 ejson@1.0.7
 es5-shim@4.1.14
 fastclick@1.0.7
+fourseven:scss@3.4.1
 geojson-utils@1.0.4
 hot-code-push@1.0.0
 html-tools@1.0.5
@@ -46,6 +47,7 @@ mrt:modernizr-meteor@2.6.2
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4
+pauloborges:mapbox@2.2.3_2
 percolate:velocityjs@1.2.1_1
 promise@0.5.1
 random@1.0.5
@@ -66,3 +68,4 @@ underscore@1.0.4
 url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5
+wolves:bourbon@3.1.0
