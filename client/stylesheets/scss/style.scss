@@ -283,15 +283,15 @@ header {
 
 .cd-content {
 	/* just some dummy content */
-	padding: 80px 0;
-	width: 90%;
-	max-width: $M;
+	padding: 50px;
+	//width: 90%;
+	max-width: 80vw	;
 	margin: 0 auto;
 	z-index: $content-zindex;
 
 	.cd-intro {
-		height: 200px;
-		padding-top: 4.6em;
+		height: 150px;
+		padding-top: 2em;
 	}
 
 	h1 {
@@ -305,10 +305,6 @@ header {
 	}
 
 	@include MQ(M) {
-		.cd-intro {
-			height: 250px;
-			padding-top: 6em;
-		}
 
 		h1 {
 			@include font-size(28px);
@@ -319,4 +315,20 @@ header {
 			line-height: 1.8;
 		}
 	}
+
+	.map-container {
+		position: relative;
+		//background: darken($color-3, 30%);
+	}
+
+	//.mapbox {
+	//	margin-top: 35vh;
+	//	max-height: 50vh;
+	//	max-width: 75vw;
+	//}
+
+	#map {
+	  height: 70vh;
+	}
+
 }

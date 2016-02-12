@@ -1,0 +1,51 @@
+<head>
+  <title>BikeAntonio!</title>
+  <!-- <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'> -->
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+
+
+
+<template name="main">
+  <header>
+    <a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>
+  </header>
+
+  <nav>
+    <ul class="cd-primary-nav">
+      <li><a href="#0">What</a></li>
+      <li><a href="#0">Why</a></li>
+      <li><a href="#0">When</a></li>
+      <li><a href="#0">Where</a></li>
+      <li><a href="#0">Join In</a></li>
+      <li><a href="#0">Create an account</a></li>
+    </ul>
+  </nav>
+
+  <main class="cd-content">
+    <!-- your content here -->
+    <div class="cd-intro">
+      <h1>Bike Antonio</h1>
+    </div>
+
+    <section class="map-container">
+      <div id="map" class="mapbox"></div>
+    </section>
+
+
+  </main> <!-- cd-content -->
+
+  <div class="cd-overlay-nav">
+    <span></span>
+  </div> <!-- cd-overlay-nav -->
+
+  <div class="cd-overlay-content">
+    <span></span>
+  </div> <!-- cd-overlay-content -->
+
+  <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+</template>
