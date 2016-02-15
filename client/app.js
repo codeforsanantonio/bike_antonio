@@ -43,8 +43,10 @@ Template.main.onRendered(function () {
   this.autorun(function () {
     if (Mapbox.loaded()) {
       L.mapbox.accessToken = 'pk.eyJ1Ijoiaml0b3MiLCJhIjoiOXE1SHc4VSJ9.RRtkSxtWwF2e7jBnLskfiQ';
-      var map = L.mapbox.map('map', 'jitos.p4la6ch6');
-      view = map.setView([29.402195, -98.481345], 11);
+      var map = L.mapbox.map('map', 'mapbox.streets').setView([29.402195, -98.481345], 11);
+      var tileLayer = L.mapbox.tileLayer('jitos.p4la6ch6')
+       .setZIndex(2)
+       .addTo(map);
     }
   });
 });
