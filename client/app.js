@@ -24,6 +24,7 @@ function layerInit(){
   }, 0);
 }
 
+
 Template.main.onCreated(function() {
   window.requestAnimationFrame(layerInit);
 });
@@ -31,24 +32,20 @@ Template.main.onCreated(function() {
 
 
 Template.main.onRendered(function () {
+
   $(window).on('resize', function(){
     window.requestAnimationFrame(layerInit);
   });
 
-  Mapbox.debug = true;
-  Mapbox.load({
-    plugins: ['markercluster', 'heat']
+  mapboxgl.accessToken = "pk.eyJ1Ijoiaml0b3MiLCJhIjoiOXE1SHc4VSJ9.RRtkSxtWwF2e7jBnLskfiQ";
+  var map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/jitos/cikohsmg800irbgm1e4za2mwk",
   });
+  map.addControl(new mapboxgl.Directions({
+    profile: 'cycling'
+  }));
 
-  this.autorun(function () {
-    if (Mapbox.loaded()) {
-      L.mapbox.accessToken = 'pk.eyJ1Ijoiaml0b3MiLCJhIjoiOXE1SHc4VSJ9.RRtkSxtWwF2e7jBnLskfiQ';
-      var map = L.mapbox.map('map', 'mapbox.streets').setView([29.402195, -98.481345], 11);
-      var tileLayer = L.mapbox.tileLayer('jitos.p4la6ch6')
-       .setZIndex(2)
-       .addTo(map);
-    }
-  });
 });
 
 
