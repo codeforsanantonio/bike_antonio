@@ -21,7 +21,7 @@
 - https://guides.github.com/activities/hello-world/ provies a deeper understanding of git and a github workflow
 
 ## OK, GO! Give me the code so I can help!
-- In your projects directory, run `git clone https://github.com/codeforsanantonio/edwards_aquifer.git`
+- In your projects directory, run `git clone https://github.com/codeforsanantonio/bike_antonio.git`
 
 ## GitHub Workflow
 - After cloning, `git branch <your-name>`, where <your-name> is a variable.
