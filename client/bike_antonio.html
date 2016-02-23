@@ -16,29 +16,37 @@
 
 <template name="main">
   <header>
-    <a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>
+    <!-- <a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a> -->
+    {{> loginButtons}}
   </header>
 
+
   <nav>
+
     <ul class="cd-primary-nav">
       <li><a href="#0">What</a></li>
       <li><a href="#0">Why</a></li>
       <li><a href="#0">When</a></li>
       <li><a href="#0">Where</a></li>
       <li><a href="#0">Join In</a></li>
-      <li><a href="#0">Create an account</a></li>
+
     </ul>
   </nav>
 
   <main class="cd-content">
     <!-- your content here -->
-    <div class="cd-intro">
-      <h1>Bike Antonio</h1>
-    </div>
+      <div class="cd-intro">
+        <h1>Bike Antonio</h1>
+      </div>
 
-    <section class="map-container">
-      <div id="map" class="mapbox"></div>
-    </section>
+
+    {{#if currentUser}}
+      <section class="map-container">
+        <div id="map" class="mapbox"></div>
+      </section>
+    {{else}}
+      <h1>please login to see map</h1>
+    {{/if}}
 
 
   </main> <!-- cd-content -->
