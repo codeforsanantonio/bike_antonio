@@ -22,3 +22,6 @@ mrt:modernizr-meteor
 percolate:velocityjs
 fourseven:scss
 wolves:bourbon
+accounts-base
+accounts-password
+accounts-ui
