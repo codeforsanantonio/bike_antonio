@@ -7,7 +7,7 @@
 @import 'partials/layout'; // responsive grid and media queries
 
 
- //scss-lint:disable Indentation, Comment, TrailingWhitespace, SingleLinePerSelector VendorPrefix PropertySortOrder DeclarationOrder NameFormat
+ //scss-lint:disable IdSelector Indentation, Comment, TrailingWhitespace, SingleLinePerSelector VendorPrefix PropertySortOrder DeclarationOrder NameFormat
 
 
 // -------------------------------
@@ -316,19 +316,20 @@ header {
 		}
 	}
 
-	.map-container {
-		position: relative;
-		//background: darken($color-3, 30%);
-	}
 
-	//.mapbox {
-	//	margin-top: 35vh;
-	//	max-height: 50vh;
-	//	max-width: 75vw;
-	//}
+}
 
-	#map {
-	  height: 70vh;
-	}
+.map-container {
+	position: relative;
+	//background: darken($color-3, 30%);
+}
 
+#map {
+	height: 70vh;
+}
+
+#login-buttons {
+    position: relative;
+    left: 4em;
+    top: 1em;
 }

@@ -50,9 +50,6 @@ Template.main.onRendered(function () {
 
 
 
-
-
-
 Template.main.events({
 
   'click .cd-nav-trigger': function(){
