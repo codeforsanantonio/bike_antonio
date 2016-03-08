@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>test for Map data</title>
+		
+		<meta charset="utf8">
+
+
+
+		<style type="text/css">
+	        #map {
+	            width: 770px;
+	            height: 481px;
+	            float: left;
+	        }
+
+    	</style>
+
+		<script src="mapbox://styles/annajmorton/cil8rc6bn001v9gkk732nxszy"></script>
+    	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+
+
+
+
+	</head>
+
+
+
+	<body>
+
+
+		<h1>Hello my lovely new map will all sorts of amazing data alllllll oOOoover it!</h1>
+		<div id="map"></div>
+
+		 
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		
+		
+
+		<script>
+			L.mapbox.accessToken = 'pk.eyJ1IjoiYW5uYWptb3J0b24iLCJhIjoiY2lsOHIxY2VmMGVjbXUwbTA4cmplYWt6cyJ9.uefTgYYIHMOITXDnBCKXTA';
+		</script>
+
+		<script type="text/javascript">
+
+		 	"use strict";
+
+		 	var map = L.mapbox.map('map', 'mapbox.streets').setView([40.718217, -73.998284], 8);
+		 	
+		 	L.mapbox.featureLayer().loadURL('/help/data/examples/data.geojson').addTo(map);
+
+			
+
+		</script>
+
+	</body>
+
+</html>
+
