@@ -23,16 +23,16 @@
 }
 
 body {
-	background-color: $color-3;
-	color: $color-1;
+	background-color: $color-2;
+	color: #fff;
 	font: {
-		family: $primary-font; // variables inside partials > _variables.scss
+		family: $body-font; // variables inside partials > _variables.scss
 		size: 100%;
 	}
 }
 
 a {
-	color: $color-2;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -296,12 +296,17 @@ header {
 
 	h1 {
 		text-align: center;
+		font: {
+		family: $headline-font;
+		size: 200%;
+		color: #fff;
+	}
 		@include font-size(20px);
 	}
 
 	p {
 		line-height: 1.5;
-		color: darken($color-3, 30%);
+		color: #fff;
 	}
 
 	@include MQ(M) {
@@ -326,6 +331,7 @@ header {
 
 #map {
 	height: 70vh;
+	border-radius: 8px;
 }
 
 #login-buttons {
