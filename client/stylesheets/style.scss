@@ -7,7 +7,7 @@
 @import 'partials/layout'; // responsive grid and media queries
 
 
- //scss-lint:disable IdSelector Indentation, Comment, TrailingWhitespace, SingleLinePerSelector VendorPrefix PropertySortOrder DeclarationOrder NameFormat
+ //scss-lint:disable IdSelector Indentation, Comment, TrailingWhitespace, SingleLinePerSelector VendorPrefix PropertySortOrder PropertySpelling DeclarationOrder NameFormat
 
 
 // -------------------------------
@@ -23,8 +23,8 @@
 }
 
 body {
-	background-color: $color-2;
-	color: #fff;
+	background-color: $grey;
+	color: $white;
 	font: {
 		family: $body-font; // variables inside partials > _variables.scss
 		size: 100%;
@@ -32,7 +32,7 @@ body {
 }
 
 a {
-	color: #fff;
+	color: $white;
 	text-decoration: none;
 }
 
@@ -299,14 +299,14 @@ header {
 		font: {
 		family: $headline-font;
 		size: 200%;
-		color: #fff;
+		color: $grey;
 	}
 		@include font-size(20px);
 	}
 
 	p {
 		line-height: 1.5;
-		color: #fff;
+		color: $white;
 	}
 
 	@include MQ(M) {
